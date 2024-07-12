@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ################################################################################
-#                  commbase_text_translator_phi3_mini_literals                 #
+#                   commbase_text_translator_phi3_mini_file                    #
 #                                                                              #
 # A simple generative AI assistant using the Phi3 Small Language Model (SLM).  #
 #                                                                              #
@@ -30,13 +30,13 @@
 #  along with this program; if not, write to the Free Software                 #
 #  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA   #
 
-# commbase_text_translator_phi3_mini_literals.py
+# commbase_text_translator_phi3_mini_file.py
 # Translates text from one language to another using the Ollama API with a
 # specific model ('commbase-phi3-mini'). It accepts three command-line
 # arguments: the text to translate, the source language, and the target
 # language.
 # Example usage:
-# python commbase_text_translator_phi3_mini_literals.py """Your text containing "quotes" and 'single quotes'.""" english spanish
+# python commbase_text_translator_phi3_mini_file.py resources/text-to-translate.txt English Spanish >> translation.txt
 
 # Imports
 import sys
@@ -48,12 +48,12 @@ def prompt_user():
     Prompt user for input via command-line arguments.
 
     Expects three arguments:
-        - Text to translate (sys.argv[1])
+        - Path to a file containing text to translate (sys.argv[1])
         - Source language code (sys.argv[2])
         - Target language code (sys.argv[3])
 
     Prints usage instructions and exits if incorrect number of arguments is
-    provided.
+    provided or if the file cannot be read.
 
     Returns:
         text_to_translate (str): Text to be translated.
@@ -62,13 +62,24 @@ def prompt_user():
     """
     # Check if the script received the correct number of arguments
     if len(sys.argv) != 4:
-        print("Usage: python script.py \"Text to translate\" from_language to_language")
+        print("Usage: python commbase_text_translator_phi3_mini_file.py path_to_file from_language to_language")
         sys.exit(1)
 
-    # Get the text to translate and languages from command line arguments
-    text_to_translate = sys.argv[1]
+    # Get the path to the file containing text to translate and languages
+    file_path = sys.argv[1]
     from_language = sys.argv[2]
     to_language = sys.argv[3]
+
+    # Read the text to translate from the file
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            text_to_translate = file.read().strip()
+    except FileNotFoundError:
+        print(f"Error: File '{file_path}' not found.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Error reading file: {str(e)}")
+        sys.exit(1)
 
     return text_to_translate, from_language, to_language
 
