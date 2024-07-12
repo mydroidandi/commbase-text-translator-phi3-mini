@@ -5,7 +5,7 @@
 
 <img alt="commbase-text-translator-phi3-mini" src="commbase-text-translator-phi3-mini.jpg?raw=true" width="384" height="384" />
 
-Translates text from one language to another using the Ollama API with a specific MS Phi3 language model ('commbase-phi3-mini').
+Translates text from one language to another using the Ollama API with a specific MS Phi3 language model (commbase-phi3-mini).
 
 ## Editions
 
