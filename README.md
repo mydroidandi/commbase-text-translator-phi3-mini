@@ -1,1 +1,3 @@
-# commbase-text-translator-phi3
+# commbase-text-translator-phi3-mini
+
+
