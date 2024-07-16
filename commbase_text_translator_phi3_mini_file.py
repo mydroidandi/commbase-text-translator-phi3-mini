@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ################################################################################
-#                   commbase_text_translator_phi3_mini_file                    #
+#                      commbase_text_translator_phi3_mini                      #
 #                                                                              #
 # A simple generative AI assistant using the Phi3 Small Language Model (SLM).  #
 #                                                                              #
