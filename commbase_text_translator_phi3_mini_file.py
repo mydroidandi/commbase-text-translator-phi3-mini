@@ -100,7 +100,7 @@ def generate_response(text_to_translate, from_language, to_language):
         str: Translated text response.
     """
     # Generate the response using the provided text and languages
-    order = f"Translate this from {from_language} to {to_language}: "
+    order = f"Translate this from {from_language} to {to_language} (but do not include any explanation): "
     response = ollama.generate(model='commbase-phi3-mini', prompt=order + text_to_translate)
 
     # Extract the text response

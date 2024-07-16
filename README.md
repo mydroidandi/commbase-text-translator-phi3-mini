@@ -32,6 +32,23 @@ Translates text from one language to another using the Ollama API with a specifi
        python commbase_text_translator_phi3_mini_file.py resources/text-to-translate.txt English Spanish >> translation.txt
        ```
 
+## Language Translation Capabilities
+
+As an AI developed by Microsoft, Phi3 is capable of translating text across many languages. Phi3's language translation abilities are built upon a diverse dataset and advanced natural language processing algorithms that support numerous language pairs including but not limited to:
+
+- English (en) - Spanish (es)
+- English (en) - French (fr)
+- English (en) - German (de)
+- English (en) - Chinese (zh)
+- English (en) - Arabic (ar)
+- English (en) - Italian (it)
+- Japanese (ja) - Korean (ko)
+- Russian (ru) - Ukrainian (uk)
+
+These translations help facilitate communication across different linguistic backgrounds. It is important to note, however, that while Phi3 strives for accuracy and fluency in translation, its translations may not always capture the full cultural nuance or tone of human language due to inherent complexities within languages.
+
+If you are uncertain about Phi3's translation capabilities for specific language pairs, feel free to inquire Phi3 for additional options.
+
 ## Examples
 
 Detailed information about examples can be found in the corresponding [`examples`](./examples) directory.
