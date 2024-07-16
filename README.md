@@ -24,9 +24,9 @@ These translations help facilitate communication across different linguistic bac
 
 If you are uncertain about Phi3's translation capabilities for specific language pairs, feel free to inquire Phi3 for additional options.
 
-## Phi3 Mini 4k/128k Instruct models
+## Phi3 Mini 4k/128k Instruct Models
 
-commbase-text-translator-phi3-mini performs flawlessly with Phi3 Mini 4k/128k context window models. Please verify compatibility with other model variants or adjust your prompting accordingly.
+commbase-text-translator-phi3-mini works seamlessly with Phi3 Mini 4k/128k context window models. Please verify compatibility with other model variants or adjust your prompting accordingly.
 
 ## Editions
 
