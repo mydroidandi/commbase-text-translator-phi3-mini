@@ -9,7 +9,7 @@ Translates text from one language to another using the Ollama API with a specifi
 
 ## Language Translation Capabilities
 
-As an AI developed by Microsoft, Phi3 is capable of translating text across many languages. Phi3's language translation abilities are built upon a diverse dataset and advanced natural language processing algorithms that support numerous language pairs including but not limited to:
+As an AI developed by Microsoft, Phi3 is capable of translating text across many languages. Phi3's language translation abilities are built upon a diverse dataset and advanced natural language processing algorithms that support numerous language pairs, including but not limited to:
 
 - English (en) - Spanish (es)
 - English (en) - French (fr)
